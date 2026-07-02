@@ -24,15 +24,3 @@ DKIM (google._domainkey): NXDOMAIN, not configured. SOA serial shows the zone ha
 
 Takeaway: no SPF or DKIM, so mail spoofed as this domain sails through basic checks, even though the MX records point at real, live Google mail servers.
 Content30 Days of Kali Linux
-Day 1 & 2: Environment Setup and Initial Recon
-Github Link: https://github.com/dk201105/30DaysofKaliLinux/tree/main/Day1&2
-Setup
-Installed VirtualBox, Kali Linux (attacker VM), and Metasploitable2 (target VM) on a host-only network, 192.168.56.0/24.
-Host Discovery
-sudo nmpasted30 Days of Kali Linux
-Day 1 & 2: Environment Setup and Initial Recon
-Github Link: https://github.com/dk201105/30DaysofKaliLinux/tree/main/Day1&2
-Setup
-Installed VirtualBox, Kali Linux (attacker VM), and Metasploitable2 (target VM) on a host-only network, 192.168.56.0/24.
-Host Discovery
-sudo nmpasted

@@ -74,6 +74,6 @@ Three challenges in one session:
 
 ## Day 8: Base64 Image Recovery and OCR Extraction (picoCTF)
 
-`logs.txt` is a base64-encoded PNG (`base64 -d` reveals the `PNG`/`IHDR` signature). Saved as `img.png`: an AI-generated hacker illustration with a hex string burned into the image itself. `tesseract` OCR pulled the hex string out; `base64 -d` rejected it (wrong character set), `basenc --base16 -d` decoded it to the flag: `picoCTF{forensics_analysis_is_amazing_5daa4a2f}`
+`logs.txt` is a base64-encoded PNG (`base64 -d` reveals the `PNG`/`IHDR` signature). Saved as `img.png`: an illustration with a hex string burned into the image itself. `tesseract` OCR pulled the hex string out; `base64 -d` rejected it (wrong character set), `basenc --base16 -d` decoded it to the flag: `picoCTF{forensics_analysis_is_amazing_5daa4a2f}`
 
 **Takeaway:** base64 exists to carry binary through text-only channels. OCR catches text baked into pixels that metadata tools miss. A pure hex character set (`0-9`, uppercase `A-F`, no `+`/`/`/`=`) is the signal to reach for `basenc --base16 -d` instead of `base64 -d`.
